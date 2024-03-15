@@ -1,0 +1,77 @@
+﻿<Window x:Class="QuizApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Тест по C#" Height="400" Width="600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="font.jpg" />
+        </Grid.Background>
+        <Grid Background="#10FFFFFF"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <TextBlock Text="Тест по C#" FontSize="24" Margin="10"/>
+            <TextBlock Text="1. Какой из следующих типов данных является допустимым в C#?" Margin="10"/>
+            <RadioButton GroupName="q1" Content="int" Name="q1_1" Margin="10"/>
+            <RadioButton GroupName="q2" Content="string" Name="q1_2" Margin="10"/>
+            <RadioButton GroupName="q3" Content="boolean" Name="q1_3" Margin="10"/>
+            <RadioButton GroupName="q4" Content="float" Name="q1_4" Margin="10"/>
+
+            <TextBlock Text="2. Какова цель оператора 'using' в C#?" Margin="10"/>
+            <RadioButton GroupName="q2" Content="Автоматически освобождать ресурсы" Name="q2_1" Margin="10"/>
+            <RadioButton GroupName="q2" Content="Создавать новое пространство имен" Name="q2_2" Margin="10"/>
+            <RadioButton GroupName="q2" Content="Объявлять переменную" Name="q2_3" Margin="10"/>
+            <RadioButton GroupName="q2" Content="Определять метод" Name="q2_4" Margin="10"/>
+
+            <TextBlock Text="3. Какой из следующих элементов является модификатором доступа в C#?" Margin="10"/>
+            <RadioButton GroupName="q3" Content="public" Name="q3_1" Margin="10"/>
+            <RadioButton GroupName="q3" Content="private" Name="q3_2" Margin="10"/>
+            <RadioButton GroupName="q3" Content="protected" Name="q3_3" Margin="10"/>
+            <RadioButton GroupName="q3" Content="Все вышеперечисленное" Name="q3_4" Margin="10"/>
+
+            <TextBlock Text="4. В чем разница между классом и структурой в C#?" Margin="10"/>
+            <RadioButton GroupName="q4" Content="Структуры являются типами значений, а классы - ссылочными типами" Name="q4_1" Margin="10"/>
+            <RadioButton GroupName="q4" Content="Классы могут наследовать от других классов, а структуры - нет" Name="q4_2" Margin="10"/>
+            <RadioButton GroupName="q4" Content="Структуры являются неизменяемыми, а классы - изменяемыми" Name="q4_3" Margin="10"/>
+            <RadioButton GroupName="q4" Content="Все вышеперечисленное" Name="q4_4" Margin="10"/>
+
+            <TextBlock Text="5. Какой из следующих ключевых слов используется для определения интерфейса в C#?" Margin="10"/>
+            <RadioButton GroupName="q5" Content="interface" Name="q5_1" Margin="10"/>
+            <RadioButton GroupName="q5" Content="abstract" Name="q5_2" Margin="10"/>
+            <RadioButton GroupName="q5" Content="virtual" Name="q5_3" Margin="10"/>
+            <RadioButton GroupName="q5" Content="sealed" Name="q5_4" Margin="10"/>
+
+            <TextBlock Text="6. Какова цель ключевого слова 'override' в C#?" Margin="10"/>
+            <RadioButton GroupName="q6" Content="Переопределять метод в базовом классе" Name="q6_1" Margin="10"/>
+            <RadioButton GroupName="q6" Content="Создавать новый метод в производном классе" Name="q6_2" Margin="10"/>
+            <RadioButton GroupName="q6" Content="Запрещать переопределение метода в производном классе" Name="q6_3" Margin="10"/>
+            <RadioButton GroupName="q6" Content="Вызывать метод в базовом классе" Name="q6_4" Margin="10"/>
+
+            <TextBlock Text="7. Какой из следующих элементов является типом коллекции в C#?" Margin="10"/>
+            <RadioButton GroupName="q7" Content="List" Name="q7_1" Margin="10"/>
+            <RadioButton GroupName="q7" Content="Dictionary" Name="q7_2" Margin="10"/>
+            <RadioButton GroupName="q7" Content="Array" Name="q7_3" Margin="10"/>
+            <RadioButton GroupName="q7" Content="Все вышеперечисленное" Name="q7_4" Margin="10"/>
+
+            <TextBlock Text="8. Какова цель ключевого слова 'delegate' в C#?"  Margin="10"/>
+            <RadioButton GroupName="q8" Content="Определять безопасный для типов указатель на функцию" Name="q8_1" Margin="10"/>
+            <RadioButton GroupName="q8" Content="Создавать новый класс" Name="q8_2" Margin="10"/>
+            <RadioButton GroupName="q8" Content="Определять интерфейс" Name="q8_3" Margin="10"/>
+            <RadioButton GroupName="q8" Content="Создавать событие" Name="q8_4" Margin="10"/>
+
+            <TextBlock Text="9. Какой из следующих элементов является типом обработки исключений в C#?" Margin="10"/>
+            <RadioButton GroupName="q9" Content="try-catch-finally" Name="q9_1" Margin="10"/>
+            <RadioButton GroupName="q9" Content="throw-catch" Name="q9_2" Margin="10"/>
+            <RadioButton GroupName="q9" Content="try-catch" Name="q9_3" Margin="10"/>
+            <RadioButton GroupName="q9" Content="Все вышеперечисленное" Name="q9_4" Margin="10"/>
+
+            <TextBlock Text="10. Какова цель ключевых слов 'async' и 'await' в C#?" Margin="10"/>
+            <RadioButton GroupName="q10" Content="Включать асинхронное программирование" Name="q10_1" Margin="10"/>
+            <RadioButton GroupName="q10" Content="Создавать многопоточные приложения" Name="q10_2" Margin="10"/>
+            <RadioButton GroupName="q10" Content="Улучшать производительность" Name="q10_3" Margin="10"/>
+            <RadioButton GroupName="q10" Content="Обрабатывать исключения" Name="q10_4" Margin="10"/>
+
+            <Button Content="Проверить результат" Click="Submit_Click" Margin="10"/>
+        </StackPanel>
+    </ScrollViewer>
+    </Grid>
+</Window>
